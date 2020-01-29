@@ -1,6 +1,6 @@
-FROM gcr.io/google_containers/nginx-slim:0.16
+FROM openresty/openresty:alpine
 
-ADD nginx.conf /etc/nginx/nginx.conf
+ADD nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 
 COPY www /www
 
